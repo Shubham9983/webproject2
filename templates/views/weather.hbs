@@ -67,7 +67,7 @@
         "Jan",
         "Feb",
         "Mar",
-        "Apr",
+        "April",
         "May",
         "June",
         "July",
@@ -78,10 +78,14 @@
         "Dec",
          ];
       var now =new Date();
+    var date = now.getDate(); 
       month = months[now.getMonth()];
-      var date =document.getElementById('today_date'); 
-         date.innerText = month;
+      var Year = now.getFullYear();
+      var date1 =document.getElementById('today_date');
      
+      
+         date1.innerText = date+"  "+month+"  "+Year;
+         
 
    //return `${month}  ${date} ;
 
