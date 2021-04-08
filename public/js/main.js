@@ -7,7 +7,7 @@ const city_name = document.getElementById('city_name');
 const getInfo = async(event) =>{
     event.preventDefault();
     let cityVal = cityName.value;
-    if(cityVal ==""){
+    if(cityVal ===""){
         city_name.innerText =`please write the name before search`;
         datahide.classList.add('data_hide');
     }else{
